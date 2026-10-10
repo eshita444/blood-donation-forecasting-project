@@ -1,0 +1,40 @@
+RISK SUMMARY as of 2025-12-31 (next 7 days)
+
+Risk level counts (hospital x group rows):
+risk_level
+High      20
+Medium    44
+Low       32
+
+Dashboard status counts:
+status
+LOW STOCK        44
+STABLE           32
+SHORTAGE RISK    20
+
+High risk by blood group:
+blood_group
+O-     4
+O+     4
+A-     3
+AB+    3
+B-     2
+A+     2
+B+     2
+
+High risk by hospital:
+hospital_id  hospital_name                      
+HOSP10       Government Hospital, Tambaram          6
+HOSP07       Fortis Malar Hospital, Adyar           5
+HOSP04       Rajiv Gandhi Govt. General Hospital    3
+HOSP12       SIMS Hospital, Vadapalani              3
+HOSP05       Stanley Medical College Hospital       1
+HOSP09       Chettinad Hospital, Kelambakkam        1
+HOSP08       Tulips Multispeciality, OMR            1
+
+Historical wastage rate (expired / (donated + procured)): 0.08%
+Forecast wastage, next 7 days: 0 units across 0 batches
+Total surplus: 211 units | total deficit: 418 units  (input to the redistribution step)
+
+Notes: safety stock = 3 days of mean demand (common groups) / 5 days (A-, B-, AB-, O-), matching the simulation's targets.
+Days of cover uses the upper-bound demand. The projection ignores regional-centre procurement, so it is deliberately cautious.
